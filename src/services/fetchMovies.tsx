@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { Movie } from "../interface/Movie";
+import { Movie } from "../model/Movie";
 
 export const fetchMovies = createAsyncThunk('movies/fetchMovies', async () => {
   const response = await axios.get("https://swapi.dev/api/films/?format=json");

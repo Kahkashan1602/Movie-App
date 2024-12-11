@@ -2,15 +2,14 @@ import React from 'react';
 import { CiStar } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 
-interface Rating {
+interface Ratings {
   value: number;
-  count?: number;
 }
 
-const Rating = ({ value, count = 10 }:Rating) => {
+const Rating = ({ value}:Ratings) => {
   const stars = [];
-  for (let i = 0; i < count; i++) {
-    const filled = i < value ? <FaStar style={{color:'orange'}}/> : <CiStar className='flex'/>
+  for (let i = 0; i < 10; i++) {
+    const filled = i < value ? <FaStar style={{color:'orange'}} key={i}  data-testid="filled-star"/> : <CiStar className='flex' key={i} data-testid="empty-star"/>
     stars.push(filled);
   }
   return <div className='flex'>{stars}</div>;

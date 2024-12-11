@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import { RootState } from '../state/store';
+import { RootState } from '../redux/store';
 
 const useAvgRating = () => {
     const {selectedMovie } = useSelector((state: RootState) => state.movies);

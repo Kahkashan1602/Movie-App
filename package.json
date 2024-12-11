@@ -1,17 +1,15 @@
 {
   "name": "starwars-saga",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.119",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "axios": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
@@ -50,7 +48,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/redux-mock-store": "^1.5.0",
+    "axios": "^1.7.9",
     "axios-mock-adapter": "^2.1.0",
-    "jest": "^27.5.1"
+    "babel-jest": "^29.7.0",
+    "jest": "^27.5.1",
+    "jest-mock": "^29.7.0",
+    "jest-transform-stub": "^2.0.0",
+    "redux-mock-store": "^1.5.5"
   }
 }
